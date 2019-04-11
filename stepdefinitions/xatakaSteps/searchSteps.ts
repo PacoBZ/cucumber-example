@@ -1,7 +1,5 @@
 import { XatakaPageObject } from '../../pages/examples/xatakaHome';
 import { defineSupportCode } from 'cucumber';
-import { browser } from 'protractor';
-var EC = browser.ExpectedConditions;
 
 let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
@@ -21,7 +19,7 @@ defineSupportCode(function ({ When, Then }) {
         await home.searchConfirmationButton.click();
     });
 
-    Then(/^the search count has to appears$/, async () => {
+    Then(/^the search count has to appear$/, async () => {
         await expect(home.searchResultCountText.isDisplayed()).to.eventually.equal(true);
     });
 
