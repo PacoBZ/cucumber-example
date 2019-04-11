@@ -2,3 +2,4 @@ node_modules/
 typeScript/
 reports/
 .vscode/
+package-lock.json
