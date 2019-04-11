@@ -6,7 +6,7 @@ Feature: Xataka web Testing (Examples)
         When I click on Xataka Search button
         And I type "Android" at search input
         Then I confirm the search
-        And the search count has to appears
+        And the search count has to appear
 
     @GoVidaExtra
     Scenario: Ir a subweb Vidaextra

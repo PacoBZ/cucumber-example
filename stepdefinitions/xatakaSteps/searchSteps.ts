@@ -21,7 +21,7 @@ defineSupportCode(function ({ When, Then }) {
         await home.searchConfirmationButton.click();
     });
 
-    Then(/^the search count has to appears$/, async () => {
+    Then(/^the search count has to appear$/, async () => {
         await expect(home.searchResultCountText.isDisplayed()).to.eventually.equal(true);
     });
 
